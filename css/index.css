@@ -1,0 +1,84 @@
+html, body {
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    background: #000;
+}
+.view-container {
+    position: relative;
+    height: 100%;
+}
+.ng-scope {
+    height: 100%;
+}
+.view-holder {
+    /*position: relative;*/
+    height: 100%;
+}
+.view {
+    color: chartreuse;
+}
+
+
+[ui-view].ng-enter, [ui-view].ng-leave {
+    position: absolute;
+    left: 0;
+    right: 0;
+
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+[ui-view].ng-enter {
+    opacity: 0;
+}
+
+[ui-view].ng-enter-active {
+    opacity: 1;
+}
+
+[ui-view].ng-leave {
+    opacity: 1;
+}
+
+[ui-view].ng-leave-active {
+    opacity: 0;
+}
+
+/* two view */
+.view-two-buttons .button {
+    width: 100%;
+    height: 50%;
+    text-align: center;
+}
+.view-two-buttons .button.top {
+    outline: 1px #0f0 solid;
+}
+.view-two-buttons .button.bottom {
+    outline: 1px #0f0 solid;
+}
+
+/* view colorlist*/
+.view-colorList {}
+.view-colorList .colorList {
+    list-style: none;
+    margin: 0px;padding: 0px;
+}
+.view-colorList .colorList li{
+    height: 50px;
+    text-align: center;
+}
+.rainbow-gradient {
+    background: linear-gradient( to right ,
+        rgba(255, 0, 0, 1),
+        rgba(255, 255, 0, 1),
+        rgba(0, 255, 0, 1),
+        rgba(0, 255, 255, 1),
+        rgba(0, 0, 255, 1),
+        rgba(255, 0, 255, 1),
+        rgba(255, 0, 0, 1)
+    );
+}

@@ -1,0 +1,13 @@
+<div class="view view-colorList">
+    <ul class="colorList">
+        <li class="listItem" ng-repeat="item in list" ng-click="run(item)">
+            <div ng-if="item.name != 'Rainbow'" style="background: {{item.color}}">
+                {{item.name}}
+            </div>
+
+            <div ng-if="item.name == 'Rainbow'" class="rainbow-gradient">
+                {{item.name}}
+            </div>
+        </li>
+    </ul>
+</div>
