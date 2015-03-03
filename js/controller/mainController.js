@@ -224,11 +224,11 @@ angular.module('NAME.controllers', [])
 
 		if ($rootScope.blinkerConf.mode === 'shake') {
 			watcher = navigator.accelerometer.watchAcceleration(function (a) {
-					if (a.x > 9) {
+					if (a.x > 0.9) {
 						if (spikeState !== 'left') {
 							spikeState = 'left';
 						}
-					} else if (a.x < -9) {
+					} else if (a.x < -0.9) {
 						if (spikeState !== 'right') {
 							spikeState = 'right';
 						}
